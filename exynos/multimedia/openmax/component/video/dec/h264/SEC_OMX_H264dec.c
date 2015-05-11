@@ -1029,7 +1029,7 @@ OMX_ERRORTYPE SEC_MFC_H264_Decode_Nonblock(OMX_COMPONENTTYPE *pOMXComponent, SEC
                 pSECInputPort->portDefinition.format.video.nStride      = ((imgResol.width + 15) & (~15));
                 pSECInputPort->portDefinition.format.video.nSliceHeight = ((imgResol.height + 15) & (~15));
 
-                SEC_UpdateFrameSize(pOMXComponent);
+                /*SEC_UpdateFrameSize(pOMXComponent);*/
 
                 /** Send crop info call back **/
                 (*(pSECComponent->pCallbacks->EventHandler))
@@ -1050,7 +1050,7 @@ OMX_ERRORTYPE SEC_MFC_H264_Decode_Nonblock(OMX_COMPONENTTYPE *pOMXComponent, SEC
                 pSECInputPort->portDefinition.format.video.nStride      = ((imgResol.width + 15) & (~15));
                 pSECInputPort->portDefinition.format.video.nSliceHeight = ((imgResol.height + 15) & (~15));
 
-                SEC_UpdateFrameSize(pOMXComponent);
+                /*SEC_UpdateFrameSize(pOMXComponent);*/
 
                 /** Send Port Settings changed call back **/
                 (*(pSECComponent->pCallbacks->EventHandler))
@@ -1551,7 +1551,7 @@ OMX_ERRORTYPE SEC_MFC_H264_Decode_Block(OMX_COMPONENTTYPE *pOMXComponent, SEC_OM
                 pSECInputPort->portDefinition.format.video.nStride      = ((imgResol.width + 15) & (~15));
                 pSECInputPort->portDefinition.format.video.nSliceHeight = ((imgResol.height + 15) & (~15));
 
-                SEC_UpdateFrameSize(pOMXComponent);
+                /*SEC_UpdateFrameSize(pOMXComponent);*/
 
                 /** Send crop info call back **/
                 (*(pSECComponent->pCallbacks->EventHandler))
@@ -1571,7 +1571,7 @@ OMX_ERRORTYPE SEC_MFC_H264_Decode_Block(OMX_COMPONENTTYPE *pOMXComponent, SEC_OM
                 pSECInputPort->portDefinition.format.video.nStride      = ((imgResol.width + 15) & (~15));
                 pSECInputPort->portDefinition.format.video.nSliceHeight = ((imgResol.height + 15) & (~15));
 
-                SEC_UpdateFrameSize(pOMXComponent);
+                /*SEC_UpdateFrameSize(pOMXComponent);*/
 
                 /** Send Port Settings changed call back **/
                 (*(pSECComponent->pCallbacks->EventHandler))

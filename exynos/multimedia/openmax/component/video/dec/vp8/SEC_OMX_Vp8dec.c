@@ -763,7 +763,7 @@ OMX_ERRORTYPE SEC_MFC_VP8_Decode_Nonblock(OMX_COMPONENTTYPE *pOMXComponent, SEC_
                 pSECInputPort->portDefinition.format.video.nStride      = ((imgResol.width + 15) & (~15));
                 pSECInputPort->portDefinition.format.video.nSliceHeight = ((imgResol.height + 15) & (~15));
 
-                SEC_UpdateFrameSize(pOMXComponent);
+                /*SEC_UpdateFrameSize(pOMXComponent);*/
 
                 /** Send Port Settings changed call back **/
                 (*(pSECComponent->pCallbacks->EventHandler))
@@ -1099,7 +1099,7 @@ OMX_ERRORTYPE SEC_MFC_VP8_Decode_Block(OMX_COMPONENTTYPE *pOMXComponent, SEC_OMX
                 pSECInputPort->portDefinition.format.video.nStride      = ((imgResol.width + 15) & (~15));
                 pSECInputPort->portDefinition.format.video.nSliceHeight = ((imgResol.height + 15) & (~15));
 
-                SEC_UpdateFrameSize(pOMXComponent);
+                /*SEC_UpdateFrameSize(pOMXComponent);*/
 
                 /** Send Port Settings changed call back **/
                 (*(pSECComponent->pCallbacks->EventHandler))
