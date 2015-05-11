@@ -34,7 +34,7 @@ else
 LOCAL_STATIC_LIBRARIES += libsecmfcapi
 endif
 
-LOCAL_C_INCLUDES := $(OMX_INC) \
+LOCAL_C_INCLUDES := $(SEC_OMX_INC)/khronos \
 	$(SEC_OMX_INC)/sec \
 	$(SEC_OMX_TOP)/osal \
 	$(SEC_OMX_TOP)/core \
